@@ -7,6 +7,8 @@ defmodule WeBankWeb.Router do
 
   scope "/api", WeBankWeb do
     pipe_through :api
+
+    get "/", WelcomeController, :index
   end
 
   # Enable LiveDashboard in development
